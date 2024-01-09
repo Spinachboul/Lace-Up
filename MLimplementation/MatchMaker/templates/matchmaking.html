@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matchmaking Results</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Matchmaking Results</h1>
+        <h2>Your Profile:</h2>
+        <h3>User's Profile:</h3>
+        <p><strong>Player:</strong> {{ user_profile.Player }}</p>
+        <p><strong>Sports:</strong> {{ user_profile.Sports }}</p>
+        <p><strong>Age:</strong> {{ user_profile.Age }}</p>
+        
+        <h2>Top 5 Similar Players:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Age</th>
+                    <th>Sports</th>
+                    <th>Similarity</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for player in matched_players.values %}
+                <tr>
+                    <td>{{ player[0] }}</td>
+                    <td>{{ player[1] }}</td>
+                    <td>{{ player[2] }}</td>
+                    <td>{{ player[3] }}</td>
+                    <td>{{ player[4] }}</td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

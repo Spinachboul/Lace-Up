@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Player Matchmaking</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 24px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+            color: #555;
+        }
+        
+        input[type="number"],
+        input[type="range"],
+        input[type="submit"] {
+            margin-bottom: 8px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: calc(100% - 22px);
+            font-size: 16px;
+            vertical-align: middle;
+        }
+        input[type="range"] {
+            width: calc(100% - 42px);
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sports Player Matchmaking</h1>
+    </header>
+    <div class="container">
+        <form action="/matchmaking" method="post">
+            <h2>Select Your Top Sports:</h2>
+            <label><input type="checkbox" name="sports" value="Football"> Football</label>
+            <label><input type="checkbox" name="sports" value="Basketball"> Basketball</label>
+            <label><input type="checkbox" name="sports" value="Soccer"> Soccer</label>
+            <label><input type="checkbox" name="sports" value="Tennis"> Tennis</label>
+            <label><input type="checkbox" name="sports" value="Baseball"> Baseball</label>
+            
+            <h2>Enter Your Age:</h2>
+            <input type="number" name="age" min="18" max="40" required>
+            
+            <h2>Select Your Skill Level (1-10) for Each Chosen Sport:</h2>
+            <label for="Football_skill">Football Skill Level:</label>
+            <input type="range" id="Football_skill" name="Football_skill" min="1" max="10" required><br>
+
+            <label for="Basketball_skill">Basketball Skill Level:</label>
+            <input type="range" id="Basketball_skill" name="Basketball_skill" min="1" max="10" required><br>
+
+            <label for="Soccer_skill">Soccer Skill Level:</label>
+            <input type="range" id="Soccer_skill" name="Soccer_skill" min="1" max="10" required><br>
+
+            <label for="Tennis_skill">Tennis Skill Level:</label>
+            <input type="range" id="Tennis_skill" name="Tennis_skill" min="1" max="10" required><br>
+
+            <label for="Baseball_skill">Baseball Skill Level:</label>
+            <input type="range" id="Baseball_skill" name="Baseball_skill" min="1" max="10" required><br>
+            
+            <input type="submit" value="Find Similar Players">
+        </form>
+    </div>
+</body>
+</html>
