@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+}
+
+@keyframes progressAnimation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.animate-progress {
+    animation: progressAnimation 2.5s linear infinite;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* The main scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(253, 254, 255); /* Set the color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 201); /* Set the color of the scrollbar thumb */
+    border-radius: 10px; /* Set the border radius of the thumb */
+}
+
+/* CSS */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #999999 #dddfe0;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgb(3,7,18);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(60, 60, 65);
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #888888;
+}
+
+
+
+
+
+
+

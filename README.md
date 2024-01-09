@@ -48,10 +48,10 @@
 ### Win prediction for all the football teams 
 ![White Black Grey Plaid Square Border Collage Fathers Day Card](https://github.com/JaiBhalla03/laceUp_devsocs/assets/101990594/080213ec-2db4-4efe-bc03-18300b016539)
 
+### Chatting
+![chatting](https://github.com/JaiBhalla03/laceUp_devsocs/assets/101990594/139f807e-7c35-4839-8c9f-218aade6aa04)
 
-### MatchMaking Page
-
-
-### People who match your interests!
+### Figma File
+https://www.figma.com/file/xiqf67b2e8PXiqwBKcYoPB/devsoc?type=design&node-id=0-1&t=JdBvGSD3ZTzUktqT-0
 
 
