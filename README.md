@@ -50,4 +50,7 @@
 
 ### Match-Making Profile
 
+![pic1](https://github.com/Spinachboul/Lace-Up/assets/105979087/cc374d31-333f-4b9b-ba09-c3b87c3ac5ec)
+
+![pic2](https://github.com/Spinachboul/Lace-Up/assets/105979087/684d084f-40b3-4e62-bc46-243501400fd0)
 
